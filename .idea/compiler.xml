@@ -16,7 +16,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-service" options="-parameters" />
       <module name="order-service" options="-parameters" />
-      <module name="springcloud-demo" options="-parameters" />
+      <module name="springcloud-demo" options="" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>
