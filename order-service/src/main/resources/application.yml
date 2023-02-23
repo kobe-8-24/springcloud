@@ -1,0 +1,13 @@
+server:
+  port: 9901
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:9900/eureka/
+
+spring:
+  application:
+    name: order-service
+  profiles:
+    active: dev
