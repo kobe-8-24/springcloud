@@ -3,7 +3,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://127.0.0.1:9900/eureka/
+      defaultZone: http://127.0.0.1:8888/eureka/
 spring:
   application:
     name: order-service
