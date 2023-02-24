@@ -1,0 +1,117 @@
+2023-02-24 10:28:54.346 [zipkin-service,,] [main] INFO  com.htsc.ZipkinApplication - The following profiles are active: dev
+2023-02-24 10:28:55.250 [zipkin-service,,] [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=c2381f63-66ef-3682-b665-f76c4ecabd04
+2023-02-24 10:28:56.190 [zipkin-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2023-02-24 10:28:56.200 [zipkin-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2023-02-24 10:28:56.200 [zipkin-service,,] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-24 10:28:56.200 [zipkin-service,,] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2023-02-24 10:28:56.314 [zipkin-service,,] [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-02-24 10:28:56.315 [zipkin-service,,] [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1956 ms
+2023-02-24 10:28:56.455 [zipkin-service,,] [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-02-24 10:28:56.469 [zipkin-service,,] [main] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@42505474
+2023-02-24 10:28:57.905 [zipkin-service,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-02-24 10:28:58.395 [zipkin-service,,] [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-02-24 10:28:58.689 [zipkin-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-24 10:29:00.545 [zipkin-service,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-02-24 10:29:00.901 [zipkin-service,,] [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-02-24 10:29:00.941 [zipkin-service,,] [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-02-24 10:29:01.007 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-02-24 10:29:01.153 [zipkin-service,,] [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2023-02-24 10:29:01.153 [zipkin-service,,] [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2023-02-24 10:29:01.313 [zipkin-service,,] [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2023-02-24 10:29:01.313 [zipkin-service,,] [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2023-02-24 10:29:01.471 [zipkin-service,,] [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-24 10:29:01.646 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-02-24 10:29:01.646 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-02-24 10:29:01.646 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-02-24 10:29:01.646 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2023-02-24 10:29:01.647 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-02-24 10:29:01.647 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-02-24 10:29:01.647 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-02-24 10:29:01.845 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2023-02-24 10:29:01.847 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-02-24 10:29:01.849 [zipkin-service,,] [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-02-24 10:29:01.852 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1677205741851 with initial instances count: 0
+2023-02-24 10:29:01.859 [zipkin-service,,] [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application ZIPKIN-SERVICE with eureka with status UP
+2023-02-24 10:29:01.859 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1677205741859, current=UP, previous=STARTING]
+2023-02-24 10:29:01.861 [zipkin-service,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_ZIPKIN-SERVICE/localhost:zipkin-service:8082: registering service...
+2023-02-24 10:29:01.913 [zipkin-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2023-02-24 10:29:01.956 [zipkin-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2023-02-24 10:29:01.956 [zipkin-service,,] [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2023-02-24 10:29:01.957 [zipkin-service,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_ZIPKIN-SERVICE/localhost:zipkin-service:8082 - registration status: 204
+2023-02-24 10:29:03.219 [zipkin-service,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-02-24 10:29:03.221 [zipkin-service,,] [main] INFO  com.htsc.ZipkinApplication - Started ZipkinApplication in 12.077 seconds (JVM running for 12.693)
+2023-02-24 10:29:10.257 [zipkin-service,,] [http-nio-8082-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-24 10:29:10.257 [zipkin-service,,] [http-nio-8082-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-02-24 10:29:10.276 [zipkin-service,,] [http-nio-8082-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+2023-02-24 10:29:31.847 [zipkin-service,,] [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-02-24 10:29:31.848 [zipkin-service,,] [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-02-24 10:29:31.848 [zipkin-service,,] [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-02-24 10:29:31.848 [zipkin-service,,] [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2023-02-24 10:29:31.848 [zipkin-service,,] [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-02-24 10:29:31.848 [zipkin-service,,] [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-02-24 10:29:31.848 [zipkin-service,,] [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-02-24 10:29:31.897 [zipkin-service,,] [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2023-02-24 10:31:58.764 [zipkin-service,,] [SpringContextShutdownHook] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application ZIPKIN-SERVICE with eureka with status DOWN
+2023-02-24 10:31:58.765 [zipkin-service,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_ZIPKIN-SERVICE/localhost:zipkin-service:8082: registering service...
+2023-02-24 10:31:58.767 [zipkin-service,,] [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-02-24 10:31:58.771 [zipkin-service,,] [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2023-02-24 10:31:58.782 [zipkin-service,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_ZIPKIN-SERVICE/localhost:zipkin-service:8082 - registration status: 204
+2023-02-24 10:31:58.785 [zipkin-service,,] [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2023-02-24 10:31:58.797 [zipkin-service,,] [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_ZIPKIN-SERVICE/localhost:zipkin-service:8082 - deregister  status: 200
+2023-02-24 10:31:58.805 [zipkin-service,,] [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2023-02-24 10:32:06.239 [zipkin-service,,] [main] INFO  com.htsc.ZipkinApplication - The following profiles are active: dev
+2023-02-24 10:32:07.154 [zipkin-service,,] [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=3a540e10-a3e8-3368-bb62-3e42bb3d99e9
+2023-02-24 10:32:08.058 [zipkin-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2023-02-24 10:32:08.066 [zipkin-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2023-02-24 10:32:08.066 [zipkin-service,,] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-24 10:32:08.066 [zipkin-service,,] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2023-02-24 10:32:08.170 [zipkin-service,,] [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-02-24 10:32:08.170 [zipkin-service,,] [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1919 ms
+2023-02-24 10:32:08.308 [zipkin-service,,] [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-02-24 10:32:08.322 [zipkin-service,,] [main] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@22c53d82
+2023-02-24 10:32:09.746 [zipkin-service,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-02-24 10:32:10.472 [zipkin-service,,] [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-02-24 10:32:10.811 [zipkin-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-24 10:32:12.566 [zipkin-service,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-02-24 10:32:13.071 [zipkin-service,,] [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-02-24 10:32:13.117 [zipkin-service,,] [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-02-24 10:32:13.182 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-02-24 10:32:13.333 [zipkin-service,,] [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2023-02-24 10:32:13.333 [zipkin-service,,] [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2023-02-24 10:32:13.461 [zipkin-service,,] [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2023-02-24 10:32:13.461 [zipkin-service,,] [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2023-02-24 10:32:13.667 [zipkin-service,,] [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-24 10:32:13.843 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-02-24 10:32:13.843 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-02-24 10:32:13.843 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-02-24 10:32:13.844 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2023-02-24 10:32:13.844 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-02-24 10:32:13.844 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-02-24 10:32:13.844 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-02-24 10:32:14.104 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2023-02-24 10:32:14.105 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-02-24 10:32:14.108 [zipkin-service,,] [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-02-24 10:32:14.113 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1677205934112 with initial instances count: 0
+2023-02-24 10:32:14.120 [zipkin-service,,] [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application ZIPKIN-SERVICE with eureka with status UP
+2023-02-24 10:32:14.122 [zipkin-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1677205934122, current=UP, previous=STARTING]
+2023-02-24 10:32:14.124 [zipkin-service,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_ZIPKIN-SERVICE/localhost:zipkin-service:8082: registering service...
+2023-02-24 10:32:14.180 [zipkin-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2023-02-24 10:32:14.203 [zipkin-service,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_ZIPKIN-SERVICE/localhost:zipkin-service:8082 - registration status: 204
+2023-02-24 10:32:14.208 [zipkin-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2023-02-24 10:32:14.208 [zipkin-service,,] [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2023-02-24 10:32:15.481 [zipkin-service,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-02-24 10:32:15.482 [zipkin-service,,] [main] INFO  com.htsc.ZipkinApplication - Started ZipkinApplication in 12.416 seconds (JVM running for 12.994)
+2023-02-24 10:32:18.455 [zipkin-service,,] [http-nio-8082-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-24 10:32:18.455 [zipkin-service,,] [http-nio-8082-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-02-24 10:32:18.471 [zipkin-service,,] [http-nio-8082-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2023-02-24 10:32:44.111 [zipkin-service,,] [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-02-24 10:32:44.111 [zipkin-service,,] [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-02-24 10:32:44.111 [zipkin-service,,] [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-02-24 10:32:44.111 [zipkin-service,,] [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2023-02-24 10:32:44.111 [zipkin-service,,] [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-02-24 10:32:44.111 [zipkin-service,,] [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-02-24 10:32:44.111 [zipkin-service,,] [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-02-24 10:32:44.155 [zipkin-service,,] [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2023-02-24 10:37:13.859 [zipkin-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-24 10:42:13.864 [zipkin-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-24 10:47:13.872 [zipkin-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
