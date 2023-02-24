@@ -1,0 +1,4 @@
+/catalina.base_IS_UNDEFINED/
+/gateway-service/target/classes/application.yml
+/gateway-service/target/classes/com/htsc/GatewayApplication.class
+/gateway-service/target/classes/logback.xml
