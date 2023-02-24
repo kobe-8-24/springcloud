@@ -11,6 +11,9 @@ spring:
     name: user-service
   profiles:
     active: dev
+  kafka:
+    producer:
+      bootstrap-servers: 127.0.0.1:9092
 
 mybatis:
   type-aliases-package: com.htsc.user.pojo

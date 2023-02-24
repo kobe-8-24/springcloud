@@ -28,7 +28,7 @@
         <module>config-service</module>
         <module>consul-service</module>
         <module>nacos-service</module>
-        <module>elasticservice-service</module>
+        <module>elasticsearch-service</module>
         <module>mysql-service</module>
         <module>elk-service</module>
         <module>kafka-service</module>

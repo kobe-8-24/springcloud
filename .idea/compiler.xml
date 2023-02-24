@@ -19,7 +19,7 @@
       <module name="eureka-service" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
       <module name="order-service" options="-parameters" />
-      <module name="springcloud-demo" options="" />
+      <module name="springcloud" options="" />
       <module name="user-service" options="-parameters" />
       <module name="zipkin-service" options="-parameters" />
     </option>
