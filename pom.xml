@@ -33,6 +33,7 @@
         <module>elk-service</module>
         <module>kafka-service</module>
         <module>cache-service</module>
+        <module>rocketmq-service</module>
     </modules>
 
     <properties>

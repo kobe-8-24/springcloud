@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/cache-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consul-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consul-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elasticsearch-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elasticsearch-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elk-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elk-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kubernetes-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kubernetes-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysql-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysql-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/openfeign-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/openfeign-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/security-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/security-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipkin-service/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />

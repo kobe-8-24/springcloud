@@ -1,4 +1,13 @@
 /catalina.base_IS_UNDEFINED/
+/target
+*.iml
+*.log
+/.idea
+*.class
 /gateway-service/target/classes/application.yml
-/gateway-service/target/classes/com/htsc/GatewayApplication.class
+/out/production/cache-service/application.yml
+/zipkin-service/target/classes/application.yml
 /gateway-service/target/classes/logback.xml
+/order-service/target/classes/logback.xml
+/out/production/cache-service/logback.xml
+/zipkin-service/target/classes/logback.xml

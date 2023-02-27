@@ -6,19 +6,43 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eureka-service" />
+        <module name="nacos-service" />
+        <module name="elasticsearch-service" />
+        <module name="config-service" />
+        <module name="elk-service" />
+        <module name="kafka-service" />
         <module name="zipkin-service" />
+        <module name="rocketmq-service" />
         <module name="user-service" />
-        <module name="order-service" />
+        <module name="eureka-service" />
+        <module name="cache-service" />
+        <module name="openfeign-service" />
+        <module name="mysql-service" />
+        <module name="kubernetes-service" />
         <module name="gateway-service" />
+        <module name="security-service" />
+        <module name="order-service" />
+        <module name="consul-service" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cache-service" options="-parameters" />
+      <module name="config-service" options="-parameters" />
+      <module name="consul-service" options="-parameters" />
+      <module name="elasticsearch-service" options="-parameters" />
+      <module name="elk-service" options="-parameters" />
       <module name="eureka-service" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
+      <module name="kafka-service" options="-parameters" />
+      <module name="kubernetes-service" options="-parameters" />
+      <module name="mysql-service" options="-parameters" />
+      <module name="nacos-service" options="-parameters" />
+      <module name="openfeign-service" options="-parameters" />
       <module name="order-service" options="-parameters" />
+      <module name="rocketmq-service" options="-parameters" />
+      <module name="security-service" options="-parameters" />
       <module name="springcloud" options="" />
       <module name="user-service" options="-parameters" />
       <module name="zipkin-service" options="-parameters" />
