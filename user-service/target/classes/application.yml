@@ -2,28 +2,19 @@ server:
   port: 8081
 
 spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/paas?useSSL=false&useUnicode=true&characterEncoding=utf8
-    username: root
-    password: 123456
-    driver-class-name: com.mysql.jdbc.Driver
   application:
     name: user-service
   profiles:
     active: dev
-
-mybatis:
-  type-aliases-package: com.htsc.user.pojo
-  configuration:
-    map-underscore-to-camel-case: true
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1.0
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://admin:admin@127.0.0.1:8888/eureka/
-
-logging:
-  level:
-    com.htsc: debug
-  pattern:
-    dateformat: MM-dd HH:mm:ss:SSS
+      defaultZone: http://admin:admin@127.0.0.1:8088/eureka/

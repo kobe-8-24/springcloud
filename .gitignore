@@ -11,3 +11,5 @@
 /order-service/target/classes/logback.xml
 /out/production/cache-service/logback.xml
 /zipkin-service/target/classes/logback.xml
+/catalina.base_IS_UNDEFINED/
+/out/

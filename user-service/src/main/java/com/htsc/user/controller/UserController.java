@@ -9,6 +9,7 @@ public class UserController {
 
     @GetMapping("/user/{input}")
     public String sendUserInfo(@PathVariable String input) {
-        return "hello i am " + input;
+//        throw new RuntimeException("dddd");
+         return "hello i am " + input;
     }
 }

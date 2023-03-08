@@ -1,5 +1,6 @@
 package com.htsc.controller;
 
+import brave.Tracer;
 import com.htsc.service.ZipkinService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,6 +14,9 @@ public class ZipkinController {
 
     @Autowired
     private ZipkinService zipkinService;
+
+    @Autowired
+    private Tracer tracer;
 
     @GetMapping("/traceId")
     public String sayHi() {

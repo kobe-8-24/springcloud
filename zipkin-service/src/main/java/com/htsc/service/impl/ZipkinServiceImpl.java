@@ -17,6 +17,6 @@ public class ZipkinServiceImpl implements ZipkinService {
     }
 
     private String getString() {
-        return restTemplate.getForObject("http://localhost:8080//send/hello", String.class);
+        return restTemplate.getForObject("http://localhost:8080/send/hello", String.class);
     }
 }

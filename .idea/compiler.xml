@@ -9,6 +9,7 @@
         <module name="nacos-service" />
         <module name="elasticsearch-service" />
         <module name="config-service" />
+        <module name="trace-log-sdk" />
         <module name="elk-service" />
         <module name="kafka-service" />
         <module name="zipkin-service" />
@@ -43,7 +44,8 @@
       <module name="order-service" options="-parameters" />
       <module name="rocketmq-service" options="-parameters" />
       <module name="security-service" options="-parameters" />
-      <module name="springcloud" options="" />
+      <module name="springcloud" options="-parameters" />
+      <module name="trace-log-sdk" options="-parameters" />
       <module name="user-service" options="-parameters" />
       <module name="zipkin-service" options="-parameters" />
     </option>
