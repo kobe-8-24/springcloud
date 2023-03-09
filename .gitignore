@@ -13,3 +13,5 @@
 /zipkin-service/target/classes/logback.xml
 /catalina.base_IS_UNDEFINED/
 /out/
+/eureka-service/target/
+/catalina.base_IS_UNDEFINED/zipkin-service/logs/*.log

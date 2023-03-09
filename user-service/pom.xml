@@ -37,9 +37,10 @@
             <artifactId>spring-cloud-starter-sleuth</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.trace</groupId>
+            <groupId>com.htsc</groupId>
             <artifactId>trace-log-sdk</artifactId>
             <version>1.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
