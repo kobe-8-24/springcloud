@@ -1,12 +1,16 @@
 package com.htsc.filter;
 
+import brave.Span;
+import brave.SpanCustomizer;
 import brave.Tracer;
 import com.alibaba.fastjson.JSON;
 import com.htsc.util.RequestParamUtil;
 import com.htsc.wrapper.ChangeHeaderRequestWrapper;
 import com.htsc.wrapper.ResponseWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
@@ -21,6 +25,9 @@ public class TraceHttpFilter implements Filter {
     @Autowired
     private Tracer tracer;
 
+    @Autowired
+    private Environment environment;
+
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
         Filter.super.init(filterConfig);
@@ -30,26 +37,39 @@ public class TraceHttpFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
+
+        String pageId = request.getHeader(PAGE_ID);
+        String userId = request.getHeader(USER_ID);
+
         // 重写请求头、请求参数、响应
         ChangeHeaderRequestWrapper headerMapRequestWrapper = new ChangeHeaderRequestWrapper(request);
         ResponseWrapper responseWrapper = new ResponseWrapper(response);
+        Span span = tracer.currentSpan();
 
-        headerMapRequestWrapper.addHeader(PAGE_ID, request.getHeader(PAGE_ID));
-        headerMapRequestWrapper.addHeader(USER_ID, request.getHeader(USER_ID));
+        if (!StringUtils.isEmpty(pageId)) {
+            headerMapRequestWrapper.addHeader(PAGE_ID, pageId);
+            span.tag(PAGE_ID, pageId);
+        }
 
-        tracer.currentSpan()
-                .tag(PAGE_ID, request.getHeader(PAGE_ID))
-                .tag(USER_ID, request.getHeader(USER_ID))
-                .tag(REQ_PARAMS, JSON.toJSONString(RequestParamUtil.getParams(headerMapRequestWrapper)));
+        if (!StringUtils.isEmpty(userId)) {
+            headerMapRequestWrapper.addHeader(USER_ID, userId);
+            span.tag(USER_ID, userId);
+        }
+
+        span.tag(REQ_PARAMS, JSON.toJSONString(RequestParamUtil.getParams(headerMapRequestWrapper)));
+
+        span.tag("server.port", environment.getProperty("server.port"));
 
         filterChain.doFilter(headerMapRequestWrapper, responseWrapper);
 
-        tracer.currentSpan().tag(RESPONSE, new String(responseWrapper.getContent(), StandardCharsets.UTF_8));
+        span.tag(RESPONSE, new String(responseWrapper.getContent(), StandardCharsets.UTF_8));
 
         ServletOutputStream outputStream = response.getOutputStream();
         outputStream.write(responseWrapper.getContent());
         outputStream.flush();
         outputStream.close();
+
+
     }
 
     @Override

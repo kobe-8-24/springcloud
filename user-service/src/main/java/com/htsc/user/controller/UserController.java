@@ -1,15 +1,18 @@
 package com.htsc.user.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import com.alibaba.fastjson.JSONObject;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 @RestController
 public class UserController {
 
-    @GetMapping("/user/{input}")
-    public String sendUserInfo(@PathVariable String input) {
+    @PostMapping("/user")
+    public String sendUserInfo(@RequestBody String userMap) {
+        Map map = JSONObject.parseObject(userMap, Map.class);
+
 //        throw new RuntimeException("dddd");
-         return "hello i am " + input;
+         return "hello i am " + map.get("key1");
     }
 }

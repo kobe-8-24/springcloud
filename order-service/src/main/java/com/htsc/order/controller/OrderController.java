@@ -1,8 +1,12 @@
 package com.htsc.order.controller;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.Map;
 
 @RestController
 @ResponseBody
@@ -18,11 +22,15 @@ public class OrderController {
 ////        return restTemplate.getForObject("http://localhost:8081/user/" + input, String.class);
 //    }
 
-    @GetMapping("/send")
-    public String sendFoo(@RequestParam("input") String input) {
+    @PostMapping("/send")
+    public String sendFoo(@RequestBody String input) {
+        Map map = JSONObject.parseObject(input, Map.class);
 
-        return input;
-//        return restTemplate.getForObject("http://localhost:8081/user/" + input, String.class);
+        map.put("key1", "hahhahaha");
+        map.put("key2", "dickinson");
+
+//        return input;
+        return restTemplate.postForObject("http://localhost:8081/user", JSON.toJSONString(map), String.class);
     }
 
 
