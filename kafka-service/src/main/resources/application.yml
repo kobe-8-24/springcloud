@@ -1,5 +1,7 @@
 server:
   port: 8095
+  servlet:
+    context-path: /kafka-service
 
 spring:
   application:

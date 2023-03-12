@@ -8,5 +8,5 @@ public interface DefineMetrics {
     // 请求参数
     String REQ_PARAMS = "requestParam";
     // 响应参数
-    String RESPONSE = "response";
+    String RESPONSE = "skywalking_response";
 }

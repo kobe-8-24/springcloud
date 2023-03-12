@@ -15,3 +15,6 @@
 /out/
 /eureka-service/target/
 /catalina.base_IS_UNDEFINED/zipkin-service/logs/*.log
+/zipkin-service/target/maven-archiver/pom.properties
+/zipkin-service/target/zipkin-service-1.0.jar
+/zipkin-service/target/zipkin-service-1.0.jar.original
