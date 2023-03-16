@@ -1,5 +1,7 @@
 server:
   port: 8092
+  servlet:
+    context-path: /nacos-service
 
 spring:
   application:
