@@ -18,3 +18,6 @@
 /zipkin-service/target/maven-archiver/pom.properties
 /zipkin-service/target/zipkin-service-1.0.jar
 /zipkin-service/target/zipkin-service-1.0.jar.original
+/zipkin-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/zipkin-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/trace-log-sdk/target/maven-archiver/pom.properties

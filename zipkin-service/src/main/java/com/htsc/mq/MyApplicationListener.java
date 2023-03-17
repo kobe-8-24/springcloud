@@ -5,6 +5,7 @@ import co.elastic.clients.elasticsearch.core.BulkResponse;
 import co.elastic.clients.elasticsearch.core.SearchResponse;
 import co.elastic.clients.elasticsearch.core.bulk.BulkOperation;
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.htsc.constant.IndexPrefix;
 import com.htsc.domain.*;
 import lombok.extern.slf4j.Slf4j;
@@ -83,9 +84,14 @@ public class MyApplicationListener implements ApplicationListener<FrontMqApplica
     private String queryBackEndMetricTrace(List<String> traceIdList) {
         List<String> backEndMetricTrace = new ArrayList<>();
         traceIdList.forEach(traceId -> {
-            String postForObject = restTemplate
-                    .postForObject("http://127.0.0.1:8080/graphql", JSON.toJSONString(getGraphqlDTO(traceId)), String.class);
-            backEndMetricTrace.add(postForObject);
+            HttpHeaders headers = new HttpHeaders();
+            headers.add("Content-Type", "application/json");
+            HttpEntity<String> entity = new HttpEntity<>(JSON.toJSONString(getGraphqlDTO(traceId)), headers);
+
+            ResponseEntity<JSONObject> postForObject = restTemplate
+                    .postForEntity("http://127.0.0.1:8080/graphql", entity, JSONObject.class);
+
+            backEndMetricTrace.add(Objects.requireNonNull(postForObject.getBody()).toString());
         });
         return JSON.toJSONString(backEndMetricTrace);
     }
@@ -95,6 +101,17 @@ public class MyApplicationListener implements ApplicationListener<FrontMqApplica
         variablesDTO.setTraceId(traceId);
         GraphqlDTO graphqlDTO = new GraphqlDTO();
         graphqlDTO.setVariables(variablesDTO);
+        graphqlDTO.setQuery("query queryTrace($traceId: ID!) {\n  trace: queryTrace(traceId: $traceId)" +
+                " {\n    spans {\n      traceId\n      segmentId\n      spanId\n      parentSpanId\n      refs " +
+                "{\n        traceId\n        parentSegmentId\n        parentSpanId\n        type\n      }\n      " +
+                "serviceCode\n      serviceInstanceName\n      startTime\n      endTime\n      endpointName\n      " +
+                "type\n      peer\n      component\n      isError\n      layer\n      tags {\n        key\n        " +
+                "value\n      }\n      logs {\n        time\n        data {\n          key\n          " +
+                "value\n        }\n      }\n      attachedEvents {\n        " +
+                "startTime {\n          seconds\n          " +
+                "nanos\n        }\n        event\n        endTime {\n          seconds\n          nanos\n        " +
+                "}\n        tags {\n          key\n          value\n        }\n        summary {\n          " +
+                "key\n          value\n        }\n      }\n    }\n  }\n  }");
         return graphqlDTO;
     }
 
