@@ -21,3 +21,15 @@
 /zipkin-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
 /zipkin-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
 /trace-log-sdk/target/maven-archiver/pom.properties
+/cache-service/target/classes/application.yml
+/cache-service/target/cache-service-1.0.jar
+/cache-service/target/cache-service-1.0.jar.original
+/cache-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/cache-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/cache-service/target/classes/logback.xml
+/cache-service/target/maven-archiver/pom.properties
+/order-service/target/classes/application.yml
+/order-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/order-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/.idea/encodings.xml
+/eureka-service/target/classes/com/htsc/eureka/WebSecurityConfig.class
