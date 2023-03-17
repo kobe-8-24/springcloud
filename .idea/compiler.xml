@@ -7,26 +7,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="nacos-service" />
-        <module name="elasticsearch-service" />
-        <module name="config-service" />
         <module name="trace-log-sdk" />
-        <module name="elk-service" />
-        <module name="kafka-service" />
         <module name="zipkin-service" />
-        <module name="rocketmq-service" />
         <module name="user-service" />
         <module name="eureka-service" />
         <module name="cache-service" />
-        <module name="openfeign-service" />
-        <module name="mysql-service" />
-        <module name="kubernetes-service" />
-        <module name="gateway-service" />
-        <module name="security-service" />
         <module name="order-service" />
-        <module name="consul-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="config-service" target="1.8" />
+      <module name="consul-service" target="1.8" />
+      <module name="elasticsearch-service" target="1.8" />
+      <module name="elk-service" target="1.8" />
+      <module name="gateway-service" target="1.8" />
+      <module name="kafka-service" target="1.8" />
+      <module name="kubernetes-service" target="1.8" />
+      <module name="nacos-service" target="1.8" />
+      <module name="openfeign-service" target="1.8" />
+      <module name="rocketmq-service" target="1.8" />
+      <module name="security-service" target="1.8" />
+      <module name="skywalking-plugin-service" target="6" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -39,12 +41,12 @@
       <module name="gateway-service" options="-parameters" />
       <module name="kafka-service" options="-parameters" />
       <module name="kubernetes-service" options="-parameters" />
-      <module name="mysql-service" options="-parameters" />
       <module name="nacos-service" options="-parameters" />
       <module name="openfeign-service" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="rocketmq-service" options="-parameters" />
       <module name="security-service" options="-parameters" />
+      <module name="skywalking-plugin-service" options="" />
       <module name="springcloud" options="-parameters" />
       <module name="trace-log-sdk" options="-parameters" />
       <module name="user-service" options="-parameters" />

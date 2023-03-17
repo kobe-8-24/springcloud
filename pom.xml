@@ -21,19 +21,7 @@
         <module>user-service</module>
         <module>order-service</module>
         <module>zipkin-service</module>
-        <module>gateway-service</module>
-        <module>openfeign-service</module>
-        <module>kubernetes-service</module>
-        <module>security-service</module>
-        <module>config-service</module>
-        <module>consul-service</module>
-        <module>nacos-service</module>
-        <module>elasticsearch-service</module>
-        <module>mysql-service</module>
-        <module>elk-service</module>
-        <module>kafka-service</module>
         <module>cache-service</module>
-        <module>rocketmq-service</module>
         <module>trace-log-sdk</module>
     </modules>
 

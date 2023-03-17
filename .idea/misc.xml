@@ -7,6 +7,22 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/config-service/pom.xml" />
+        <option value="$PROJECT_DIR$/consul-service/pom.xml" />
+        <option value="$PROJECT_DIR$/elasticsearch-service/pom.xml" />
+        <option value="$PROJECT_DIR$/elk-service/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway-service/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-service/pom.xml" />
+        <option value="$PROJECT_DIR$/kubernetes-service/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-service/pom.xml" />
+        <option value="$PROJECT_DIR$/openfeign-service/pom.xml" />
+        <option value="$PROJECT_DIR$/rocketmq-service/pom.xml" />
+        <option value="$PROJECT_DIR$/security-service/pom.xml" />
+        <option value="$PROJECT_DIR$/skywalking-plugin-service/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
