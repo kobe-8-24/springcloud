@@ -5,7 +5,9 @@ import co.elastic.clients.json.jackson.JacksonJsonpMapper;
 import co.elastic.clients.transport.ElasticsearchTransport;
 import co.elastic.clients.transport.rest_client.RestClientTransport;
 import org.apache.http.HttpHost;
+import org.apache.http.impl.nio.client.HttpAsyncClientBuilder;
 import org.elasticsearch.client.RestClient;
+import org.elasticsearch.client.RestClientBuilder;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -31,7 +33,13 @@ public class ZipkinApplication {
     public ElasticsearchClient elasticsearchClient(){
         // Create the low-level client
         RestClient restClient = RestClient.builder(
-                new HttpHost("127.0.0.1", 9200)).build();
+                new HttpHost("127.0.0.1", 9200)).setHttpClientConfigCallback(new RestClientBuilder.HttpClientConfigCallback() {
+            @Override
+            public HttpAsyncClientBuilder customizeHttpClient(HttpAsyncClientBuilder httpClientBuilder) {
+                httpClientBuilder.setKeepAliveStrategy(CustomConnectionKeepAliveStrategy.INSTANCE);
+                return httpClientBuilder;
+            }
+        }).build();
 
         // Create the transport with a Jackson mapper
         ElasticsearchTransport transport = new RestClientTransport(
@@ -40,6 +48,5 @@ public class ZipkinApplication {
         // And create the API client
         ElasticsearchClient elasticsearchClient = new ElasticsearchClient(transport);
         return elasticsearchClient;
-
     }
 }

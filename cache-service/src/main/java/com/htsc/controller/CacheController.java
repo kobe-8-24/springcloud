@@ -22,8 +22,8 @@ public class CacheController {
      */
     @PostMapping("/id")
     public String sayHi(@RequestBody Map<String, Object> map) {
-        String result = restTemplate.postForObject("http://localhost:9999/order-service/send", JSON.toJSONString(map), String.class);
-        log.info("restTemplate result:{}", result);
-        return result;
+//        String result = restTemplate.postForObject("http://localhost:9999/order-service/send", JSON.toJSONString(map), String.class);
+//        log.info("restTemplate result:{}", result);
+        return "result";
     }
 }

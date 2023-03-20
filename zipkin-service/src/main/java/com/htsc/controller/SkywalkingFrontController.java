@@ -56,12 +56,12 @@ public class SkywalkingFrontController {
         BulkResponse response = getBulkResponse(pageId, userId, frontReportMetric);
         log.info("BulkResponse errors:{}, took:{}, items:{}.", response.errors(), response.took(), response.items());
 
+        // 調用後台接口, 請求頭 添加 pageId、userId
+//        ResponseEntity<JSONObject> postForObject = getJsonObjectResponseEntity(pageId, userId);
+//        log.info("restTemplate result:{}", postForObject.getBody());
+
         // pub异步消息
         applicationEventPublisher.publishEvent(new FrontMqApplicationEvent(this, pageId, userId, JSON.toJSONString(frontReportMetric)));
-
-        // 調用後台接口, 請求頭 添加 pageId、userId
-        ResponseEntity<JSONObject> postForObject = getJsonObjectResponseEntity(pageId, userId);
-        log.info("restTemplate result:{}", postForObject.getBody());
 
         return JSON.toJSONString(response.items());
     }
@@ -70,8 +70,8 @@ public class SkywalkingFrontController {
         // 模拟页面上发起两次请求
 
         // 第一次 cache-service order-service user-service
-        restTemplate.postForEntity("http://localhost:8083/cache-service/skywalking/id",
-                new HttpEntity<>(getStringObjectMap(), getHttpHeaders(pageId, userId)), JSONObject.class);
+//        restTemplate.postForEntity("http://localhost:8083/cache-service/skywalking/id",
+//                new HttpEntity<>(getStringObjectMap(), getHttpHeaders(pageId, userId)), JSONObject.class);
 
         // 第二次 order-service user-service
         return restTemplate.postForEntity("http://localhost:9999/order-service/send",

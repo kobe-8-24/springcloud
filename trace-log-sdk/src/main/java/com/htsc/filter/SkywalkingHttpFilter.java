@@ -31,7 +31,7 @@ import java.util.List;
 import static com.htsc.constant.DefineMetrics.*;
 
 @Component
-@ConditionalOnProperty(value = "spring.application.name", havingValue = "cache-service")
+//@ConditionalOnProperty(value = "spring.application.name", havingValue = "cache-service")
 @Slf4j
 public class SkywalkingHttpFilter implements Filter {
     @Autowired
@@ -75,10 +75,18 @@ public class SkywalkingHttpFilter implements Filter {
             headerMapRequestWrapper.addHeader(USER_ID, userId);
         }
 
+        filterChain.doFilter(headerMapRequestWrapper, responseWrapper);
+
+        // 填充请求头
+        if (!StringUtils.isEmpty(pageId)) {
+            ActiveSpan.tag(PAGE_ID, pageId);
+        }
+        if (!StringUtils.isEmpty(userId)) {
+            ActiveSpan.tag(USER_ID, userId);
+        }
+
         ActiveSpan.tag(REQ_PARAMS, JSON.toJSONString(RequestParamUtil.getParams(headerMapRequestWrapper)));
         ActiveSpan.tag(SERVER_PORT, environment.getProperty(SERVER_PORT));
-
-        filterChain.doFilter(headerMapRequestWrapper, responseWrapper);
 
         ActiveSpan.tag(RESPONSE, new String(responseWrapper.getContent(), StandardCharsets.UTF_8));
 

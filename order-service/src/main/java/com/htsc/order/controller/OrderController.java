@@ -29,8 +29,10 @@ public class OrderController {
         map.put("key1", "hahhahaha");
         map.put("key2", "dickinson");
 
+        return (String) map.get("key1");
+
 //        return input;
-        return restTemplate.postForObject("http://localhost:8081/user-service/user", JSON.toJSONString(map), String.class);
+//        return restTemplate.postForObject("http://localhost:8081/user-service/user", JSON.toJSONString(map), String.class);
     }
 
 

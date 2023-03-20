@@ -42,7 +42,7 @@ public class MyApplicationListener implements ApplicationListener<FrontMqApplica
 
         try {
             // 等待5min 当前链路完成！！！
-            Thread.sleep(5 * 60 * 1000);
+            Thread.sleep( 1000);
             log.info("start MyApplicationListener. t2:{}", System.currentTimeMillis() - t1);
         } catch (InterruptedException e) {
             log.error("MyApplicationListener occurs ex:{}", e.getMessage());
