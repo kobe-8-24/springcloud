@@ -10,13 +10,11 @@ import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestClientBuilder;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-@EnableEurekaClient
 @EnableScheduling
 public class ZipkinApplication {
     public static void main(String[] args) {
@@ -31,22 +29,15 @@ public class ZipkinApplication {
     //注入IOC容器
     @Bean
     public ElasticsearchClient elasticsearchClient(){
-        // Create the low-level client
         RestClient restClient = RestClient.builder(
-                new HttpHost("127.0.0.1", 9200)).setHttpClientConfigCallback(new RestClientBuilder.HttpClientConfigCallback() {
-            @Override
-            public HttpAsyncClientBuilder customizeHttpClient(HttpAsyncClientBuilder httpClientBuilder) {
-                httpClientBuilder.setKeepAliveStrategy(CustomConnectionKeepAliveStrategy.INSTANCE);
-                return httpClientBuilder;
-            }
-        }).build();
+                new HttpHost("127.0.0.1", 9200)).setHttpClientConfigCallback(httpClientBuilder -> {
+                    httpClientBuilder.setKeepAliveStrategy(CustomConnectionKeepAliveStrategy.INSTANCE);
+                    return httpClientBuilder;
+                }).build();
 
-        // Create the transport with a Jackson mapper
         ElasticsearchTransport transport = new RestClientTransport(
                 restClient, new JacksonJsonpMapper());
 
-        // And create the API client
-        ElasticsearchClient elasticsearchClient = new ElasticsearchClient(transport);
-        return elasticsearchClient;
+        return new ElasticsearchClient(transport);
     }
 }

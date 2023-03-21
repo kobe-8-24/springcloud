@@ -1,6 +1,5 @@
 package com.htsc.controller;
 
-import brave.Tracer;
 import co.elastic.clients.elasticsearch.ElasticsearchClient;
 import co.elastic.clients.elasticsearch.core.SearchResponse;
 import com.alibaba.fastjson.JSON;
@@ -17,7 +16,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
-import javax.annotation.PostConstruct;
 import java.io.*;
 import java.util.*;
 
@@ -30,9 +28,6 @@ public class ZipkinController {
 
     @Autowired
     private ZipkinService zipkinService;
-
-    @Autowired
-    private Tracer tracer;
 
     @Autowired
     private ElasticsearchClient elasticsearchClient;

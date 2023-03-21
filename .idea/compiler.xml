@@ -7,7 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eureka-service" />
         <module name="cache-service" />
         <module name="zipkin-service" />
         <module name="trace-log-sdk" />
@@ -20,6 +19,7 @@
       <module name="consul-service" target="1.8" />
       <module name="elasticsearch-service" target="1.8" />
       <module name="elk-service" target="1.8" />
+      <module name="eureka-service" target="1.8" />
       <module name="gateway-service" target="1.8" />
       <module name="kafka-service" target="1.8" />
       <module name="kubernetes-service" target="1.8" />
