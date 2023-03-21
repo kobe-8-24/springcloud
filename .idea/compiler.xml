@@ -7,11 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="trace-log-sdk" />
-        <module name="zipkin-service" />
-        <module name="user-service" />
         <module name="eureka-service" />
         <module name="cache-service" />
+        <module name="zipkin-service" />
+        <module name="trace-log-sdk" />
+        <module name="user-service" />
         <module name="order-service" />
       </profile>
     </annotationProcessing>
