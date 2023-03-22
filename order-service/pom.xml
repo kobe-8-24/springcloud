@@ -17,20 +17,20 @@
     <packaging>jar</packaging>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <spring.boot.starter.web.version>2.6.7</spring.boot.starter.web.version>
-        <jakarta.version>2.0.1</jakarta.version>
-        <fastjson.version>1.2.9</fastjson.version>
+        <trace.log.sdk.version>1.0</trace.log.sdk.version>
         <elasticsearch.rest.client.version>8.6.2</elasticsearch.rest.client.version>
-        <elasticsearch.java.version>8.6.2</elasticsearch.java.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.htsc</groupId>
             <artifactId>trace-log-sdk</artifactId>
-            <version>1.0</version>
+            <version>${trace.log.sdk.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.elasticsearch.client</groupId>
+            <artifactId>elasticsearch-rest-client</artifactId>
+            <version>${elasticsearch.rest.client.version}</version>
         </dependency>
     </dependencies>
 
