@@ -21,7 +21,6 @@
         <jakarta.version>2.0.1</jakarta.version>
         <elasticsearch.rest.client.version>8.6.2</elasticsearch.rest.client.version>
         <elasticsearch.java.version>8.6.2</elasticsearch.java.version>
-        <apm.network.version>8.5.0</apm.network.version>
     </properties>
 
     <dependencies>
@@ -47,11 +46,6 @@
             <groupId>org.apache.skywalking</groupId>
             <artifactId>apm-toolkit-trace</artifactId>
             <version>${apm.toolkit.trace}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.skywalking</groupId>
-            <artifactId>apm-network</artifactId>
-            <version>${apm.network.version}</version>
         </dependency>
         <dependency>
             <groupId>org.glassfish</groupId>

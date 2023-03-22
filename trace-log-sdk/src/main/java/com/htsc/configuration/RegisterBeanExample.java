@@ -20,7 +20,7 @@ public class RegisterBeanExample {
     }
 
     @Bean
-    public ElasticsearchClient elasticsearchClient(){
+    public ElasticsearchClient elasticsearchClient() {
         return new ElasticsearchClient(new RestClientTransport(RestClient.builder(new HttpHost("127.0.0.1",
                 9200)).build(), new JacksonJsonpMapper()));
     }
