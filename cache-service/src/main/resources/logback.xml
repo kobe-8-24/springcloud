@@ -149,7 +149,7 @@
     </logger>
 
     <!-- 日志输出级别及方式 -->
-    <root level="DEBUG">
+    <root level="INFO">
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="DEBUG_FILE"/>
         <appender-ref ref="INFO_FILE"/>
