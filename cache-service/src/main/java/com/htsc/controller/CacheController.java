@@ -1,5 +1,6 @@
 package com.htsc.controller;
 
+import com.htsc.kafka.KafkaDelayMessageProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.producer.KafkaProducer;
@@ -13,6 +14,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.Map;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 @RequestMapping("/skywalking")
@@ -38,21 +40,27 @@ public class CacheController {
 
 
         // 配置 Kafka Producer
-        Properties props = new Properties();
-        props.put("bootstrap.servers", "localhost:9092");
-        props.put("key.serializer", StringSerializer.class.getName());
-        props.put("value.serializer", StringSerializer.class.getName());
-        KafkaProducer<String, String> producer = new KafkaProducer<>(props);
+//        Properties props = new Properties();
+//        props.put("bootstrap.servers", "localhost:9092");
+//        props.put("key.serializer", StringSerializer.class.getName());
+//        props.put("value.serializer", StringSerializer.class.getName());
+//        KafkaProducer<String, String> producer = new KafkaProducer<>(props);
+//
+//        // 创建延迟消息
+//        String message = "Delayed Message111111!";
+//        int delayTime = 60000; // 60 秒钟的延迟时间
+//        long timestamp = System.currentTimeMillis() + delayTime;
+//
+//        // 发送消息
+//        ProducerRecord<String, String> record = new ProducerRecord<>("kafka_delay_topic", null, timestamp, null, message);
+//        producer.send(record);
 
-        // 创建延迟消息
-        String message = "Delayed Message111111!";
-        int delayTime = 60000; // 60 秒钟的延迟时间
-        long timestamp = System.currentTimeMillis() + delayTime;
+        KafkaDelayMessageProducer producer = new KafkaDelayMessageProducer("kafka_delay_topic");
 
-        // 发送消息
-        ProducerRecord<String, String> record = new ProducerRecord<>("kafka_delay_topic", null, timestamp, null, message);
-        producer.send(record);
+        producer.sendMessage("Hello, World!", TimeUnit.SECONDS.toMillis(30));
+        System.out.println("Message sent!");
 
+        producer.close();
 
         return "result";
     }
