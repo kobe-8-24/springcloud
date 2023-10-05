@@ -1,0 +1,78 @@
+2023-09-19 10:42:13.093 [cache-service,,] [main] INFO  com.htsc.CacheApplication - Starting CacheApplication on DESKTOP-VFAP975 with PID 19300 (D:\software\github\springcloud\cache-service\target\classes started by 57620 in D:\software\github\springcloud)
+2023-09-19 10:42:13.100 [cache-service,,] [main] INFO  com.htsc.CacheApplication - The following profiles are active: dev
+2023-09-19 10:42:14.592 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-09-19 10:42:14.600 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-09-19 10:42:14.644 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33ms. Found 0 Elasticsearch repository interfaces.
+2023-09-19 10:42:14.656 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-09-19 10:42:14.658 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-09-19 10:42:14.661 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-09-19 10:42:14.686 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-09-19 10:42:14.689 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-19 10:42:14.717 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2023-09-19 10:42:15.844 [cache-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2023-09-19 10:42:15.866 [cache-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2023-09-19 10:42:15.867 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-19 10:42:15.867 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2023-09-19 10:42:16.025 [cache-service,,] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/cache-service] - Initializing Spring embedded WebApplicationContext
+2023-09-19 10:42:16.025 [cache-service,,] [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2828 ms
+2023-09-19 10:42:17.872 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-19 10:42:19.378 [cache-service,,] [main] INFO  org.apache.kafka.clients.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [127.0.0.1:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-09-19 10:42:19.493 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-09-19 10:42:19.493 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-09-19 10:42:19.493 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1695091339491
+2023-09-19 10:44:19.511 [cache-service,,] [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.clients.admin.internals.AdminMetadataManager - [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment.
+2023-09-19 10:44:19.634 [cache-service,,] [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.clients.admin.internals.AdminMetadataManager - [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited.
+2023-09-19 10:44:19.683 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-19 10:44:19.688 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-09-19 10:44:19.713 [cache-service,,] [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.

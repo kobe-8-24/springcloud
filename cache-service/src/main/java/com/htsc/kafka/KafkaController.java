@@ -1,4 +1,4 @@
-package com.htsc.controller;
+package com.htsc.kafka;
 
 import com.htsc.kafka.KafkaDelayMessageProducer;
 import lombok.extern.slf4j.Slf4j;
@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
 @RestController
 @RequestMapping("/skywalking")
 @Slf4j
-public class CacheController {
+public class KafkaController {
     @Autowired
     private RestTemplate restTemplate;
 
@@ -66,7 +66,7 @@ public class CacheController {
     }
 
 
-    @KafkaListener(topics = "kafka_delay_topic", groupId = "mentugroup")
+//    @KafkaListener(topics = "kafka_delay_topic", groupId = "mentugroup")
     public void consumeMsg(ConsumerRecord<String,String> record) {
         //获取消息
         String message = record.value();

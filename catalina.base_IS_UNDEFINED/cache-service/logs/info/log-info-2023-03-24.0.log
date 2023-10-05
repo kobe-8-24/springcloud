@@ -1,0 +1,2170 @@
+2023-03-24 15:28:07.539 [cache-service,,] [main] INFO  com.htsc.CacheApplication - Starting CacheApplication on DESKTOP-VFAP975 with PID 11252 (D:\software\github\springcloud\cache-service\target\classes started by 57620 in D:\software\github\springcloud)
+2023-03-24 15:28:07.542 [cache-service,,] [main] INFO  com.htsc.CacheApplication - The following profiles are active: dev
+2023-03-24 15:28:08.966 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:28:08.972 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-03-24 15:28:09.005 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 Elasticsearch repository interfaces.
+2023-03-24 15:28:09.016 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:28:09.017 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-03-24 15:28:09.019 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-03-24 15:28:09.044 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:28:09.046 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-24 15:28:09.066 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2023-03-24 15:28:10.063 [cache-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2023-03-24 15:28:10.076 [cache-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2023-03-24 15:28:10.078 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-24 15:28:10.078 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2023-03-24 15:28:10.222 [cache-service,,] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/cache-service] - Initializing Spring embedded WebApplicationContext
+2023-03-24 15:28:10.222 [cache-service,,] [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2564 ms
+2023-03-24 15:28:11.898 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-24 15:28:13.569 [cache-service,,] [main] INFO  org.apache.kafka.clients.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [127.0.0.1:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-03-24 15:28:13.715 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:28:13.715 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:28:13.715 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679642893713
+2023-03-24 15:28:14.072 [cache-service,,] [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = mentugroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-03-24 15:28:14.118 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:28:14.118 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:28:14.118 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679642894118
+2023-03-24 15:28:14.120 [cache-service,,] [main] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=mentugroup] Subscribed to topic(s): skywalking_delay_message_topic
+2023-03-24 15:28:14.123 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2023-03-24 15:28:14.159 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-1, groupId=mentugroup] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 15:28:14.163 [cache-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2023-03-24 15:28:14.233 [cache-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path '/cache-service'
+2023-03-24 15:28:14.239 [cache-service,,] [main] INFO  com.htsc.CacheApplication - Started CacheApplication in 7.825 seconds (JVM running for 36.108)
+2023-03-24 15:28:15.047 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:28:15.055 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Revoking previously assigned partitions []
+2023-03-24 15:28:15.055 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions revoked: []
+2023-03-24 15:28:15.056 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:28:15.102 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:28:15.220 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Successfully joined group with generation 1
+2023-03-24 15:28:15.236 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting newly assigned partitions: skywalking_delay_message_topic-0
+2023-03-24 15:28:15.237 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Found no committed offset for partition skywalking_delay_message_topic-0
+2023-03-24 15:28:15.252 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.internals.SubscriptionState - [Consumer clientId=consumer-1, groupId=mentugroup] Resetting offset for partition skywalking_delay_message_topic-0 to offset 0.
+2023-03-24 15:28:15.252 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions assigned: [skywalking_delay_message_topic-0]
+2023-03-24 15:28:23.654 [cache-service,,] [http-nio-8083-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/cache-service] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-24 15:28:23.654 [cache-service,,] [http-nio-8083-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-24 15:28:23.668 [cache-service,,] [http-nio-8083-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2023-03-24 15:28:31.481 [cache-service,,] [kafka-coordinator-heartbeat-thread | mentugroup] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2023-03-24 15:28:31.487 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:28:31.487 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2023-03-24 15:28:31.599 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:28:32.609 [cache-service,,] [http-nio-8083-exec-1] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:795, items:[BulkResponseItem: {"create":{"_id":"xhCEEocBTRK2X9qj5vZx","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":0,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 15:28:34.912 [cache-service,,] [http-nio-8083-exec-1] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:9, items:[BulkResponseItem: {"create":{"_id":"xxCEEocBTRK2X9qj8PZT","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":1,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 15:28:37.149 [cache-service,,] [http-nio-8083-exec-1] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-03-24 15:28:37.173 [cache-service,,] [http-nio-8083-exec-1] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:28:37.173 [cache-service,,] [http-nio-8083-exec-1] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:28:37.173 [cache-service,,] [http-nio-8083-exec-1] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679642917173
+2023-03-24 15:28:37.182 [cache-service,,] [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 15:29:49.661 [cache-service,,] [kafka-coordinator-heartbeat-thread | mentugroup] INFO  org.apache.kafka.clients.FetchSessionHandler - [Consumer clientId=consumer-1, groupId=mentugroup] Error sending fetch request (sessionId=86580734, epoch=23) to node 0: org.apache.kafka.common.errors.DisconnectException.
+2023-03-24 15:29:49.661 [cache-service,,] [kafka-coordinator-heartbeat-thread | mentugroup] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2023-03-24 15:29:49.719 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:29:49.724 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Attempt to heartbeat failed for since member id consumer-1-fbe2b0d3-c06c-42b1-8280-2d59616fc9b7 is not valid.
+2023-03-24 15:29:49.725 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Failing OffsetCommit request since the consumer is not part of an active group
+2023-03-24 15:29:49.726 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Revoking previously assigned partitions [skywalking_delay_message_topic-0]
+2023-03-24 15:29:49.727 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions revoked: [skywalking_delay_message_topic-0]
+2023-03-24 15:29:49.727 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:29:49.729 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:29:49.733 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Successfully joined group with generation 3
+2023-03-24 15:29:49.734 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting newly assigned partitions: skywalking_delay_message_topic-0
+2023-03-24 15:29:49.735 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting offset for partition skywalking_delay_message_topic-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=DESKTOP-VFAP975:9092 (id: 0 rack: null), epoch=0}}
+2023-03-24 15:29:49.735 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions assigned: [skywalking_delay_message_topic-0]
+2023-03-24 15:33:02.674 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Member consumer-1-133761fd-d1dd-4b83-9146-b41b50b24d51 sending LeaveGroup request to coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:33:02.674 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=mentugroup] Unsubscribed all topics or patterns and assigned partitions
+2023-03-24 15:33:02.674 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2023-03-24 15:33:02.685 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - mentugroup: Consumer stopped
+2023-03-24 15:33:02.720 [cache-service,,] [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-03-24 15:33:02.720 [cache-service,,] [SpringContextShutdownHook] INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-03-24 15:34:16.859 [cache-service,,] [main] INFO  com.htsc.CacheApplication - Starting CacheApplication on DESKTOP-VFAP975 with PID 25584 (D:\software\github\springcloud\cache-service\target\classes started by 57620 in D:\software\github\springcloud)
+2023-03-24 15:34:16.859 [cache-service,,] [main] INFO  com.htsc.CacheApplication - The following profiles are active: dev
+2023-03-24 15:34:18.232 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:34:18.238 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-03-24 15:34:18.272 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 Elasticsearch repository interfaces.
+2023-03-24 15:34:18.283 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:34:18.284 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-03-24 15:34:18.287 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-03-24 15:34:18.313 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:34:18.315 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-24 15:34:18.338 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+2023-03-24 15:34:19.504 [cache-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2023-03-24 15:34:19.516 [cache-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2023-03-24 15:34:19.517 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-24 15:34:19.517 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2023-03-24 15:34:19.648 [cache-service,,] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/cache-service] - Initializing Spring embedded WebApplicationContext
+2023-03-24 15:34:19.649 [cache-service,,] [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2697 ms
+2023-03-24 15:34:21.281 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-24 15:34:22.908 [cache-service,,] [main] INFO  org.apache.kafka.clients.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [127.0.0.1:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-03-24 15:34:23.059 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:34:23.074 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:34:23.074 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679643263059
+2023-03-24 15:34:23.432 [cache-service,,] [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = mentugroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-03-24 15:34:23.465 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:34:23.465 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:34:23.465 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679643263465
+2023-03-24 15:34:23.481 [cache-service,,] [main] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=mentugroup] Subscribed to topic(s): skywalking_delay_message_topic
+2023-03-24 15:34:23.481 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2023-03-24 15:34:23.497 [cache-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2023-03-24 15:34:23.506 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-1, groupId=mentugroup] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 15:34:23.513 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:34:23.513 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Revoking previously assigned partitions []
+2023-03-24 15:34:23.513 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions revoked: []
+2023-03-24 15:34:23.513 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:34:23.534 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:34:23.543 [cache-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path '/cache-service'
+2023-03-24 15:34:23.543 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Successfully joined group with generation 5
+2023-03-24 15:34:23.543 [cache-service,,] [main] INFO  com.htsc.CacheApplication - Started CacheApplication in 7.873 seconds (JVM running for 78.486)
+2023-03-24 15:34:23.552 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting newly assigned partitions: skywalking_delay_message_topic-0
+2023-03-24 15:34:23.556 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting offset for partition skywalking_delay_message_topic-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=DESKTOP-VFAP975:9092 (id: 0 rack: null), epoch=0}}
+2023-03-24 15:34:23.573 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions assigned: [skywalking_delay_message_topic-0]
+2023-03-24 15:34:31.435 [cache-service,,] [http-nio-8083-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/cache-service] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-24 15:34:31.436 [cache-service,,] [http-nio-8083-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-24 15:34:31.447 [cache-service,,] [http-nio-8083-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2023-03-24 15:34:33.384 [cache-service,,] [http-nio-8083-exec-1] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:6, items:[BulkResponseItem: {"create":{"_id":"yBCKEocBTRK2X9qjaPZE","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":2,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 15:34:35.517 [cache-service,,] [http-nio-8083-exec-1] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:8, items:[BulkResponseItem: {"create":{"_id":"yRCKEocBTRK2X9qjcPb0","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":3,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 15:34:36.953 [cache-service,,] [http-nio-8083-exec-1] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-03-24 15:34:37.000 [cache-service,,] [http-nio-8083-exec-1] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:34:37.000 [cache-service,,] [http-nio-8083-exec-1] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:34:37.000 [cache-service,,] [http-nio-8083-exec-1] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679643277000
+2023-03-24 15:34:37.011 [cache-service,,] [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 15:36:25.031 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Member consumer-1-fc2dc15d-1769-46a4-b2ef-4bf86c8cb1e9 sending LeaveGroup request to coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:36:25.032 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=mentugroup] Unsubscribed all topics or patterns and assigned partitions
+2023-03-24 15:36:25.032 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2023-03-24 15:36:25.038 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - mentugroup: Consumer stopped
+2023-03-24 15:36:25.065 [cache-service,,] [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-03-24 15:36:25.065 [cache-service,,] [SpringContextShutdownHook] INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-03-24 15:36:36.572 [cache-service,,] [main] INFO  com.htsc.CacheApplication - Starting CacheApplication on DESKTOP-VFAP975 with PID 18588 (D:\software\github\springcloud\cache-service\target\classes started by 57620 in D:\software\github\springcloud)
+2023-03-24 15:36:36.577 [cache-service,,] [main] INFO  com.htsc.CacheApplication - The following profiles are active: dev
+2023-03-24 15:36:37.946 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:36:37.954 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-03-24 15:36:37.991 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28ms. Found 0 Elasticsearch repository interfaces.
+2023-03-24 15:36:37.999 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:36:38.001 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-03-24 15:36:38.004 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-03-24 15:36:38.034 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:36:38.036 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-24 15:36:38.064 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2023-03-24 15:36:39.139 [cache-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2023-03-24 15:36:39.151 [cache-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2023-03-24 15:36:39.152 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-24 15:36:39.152 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2023-03-24 15:36:39.299 [cache-service,,] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/cache-service] - Initializing Spring embedded WebApplicationContext
+2023-03-24 15:36:39.299 [cache-service,,] [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2632 ms
+2023-03-24 15:36:40.902 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-24 15:36:42.506 [cache-service,,] [main] INFO  org.apache.kafka.clients.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [127.0.0.1:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-03-24 15:36:42.613 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:36:42.613 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:36:42.613 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679643402612
+2023-03-24 15:36:42.967 [cache-service,,] [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = mentugroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-03-24 15:36:43.008 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:36:43.008 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:36:43.008 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679643403008
+2023-03-24 15:36:43.011 [cache-service,,] [main] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=mentugroup] Subscribed to topic(s): skywalking_delay_message_topic
+2023-03-24 15:36:43.013 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2023-03-24 15:36:43.030 [cache-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2023-03-24 15:36:43.044 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-1, groupId=mentugroup] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 15:36:43.045 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:36:43.051 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Revoking previously assigned partitions []
+2023-03-24 15:36:43.051 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions revoked: []
+2023-03-24 15:36:43.052 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:36:43.068 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:36:43.077 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Successfully joined group with generation 7
+2023-03-24 15:36:43.080 [cache-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path '/cache-service'
+2023-03-24 15:36:43.085 [cache-service,,] [main] INFO  com.htsc.CacheApplication - Started CacheApplication in 7.581 seconds (JVM running for 14.515)
+2023-03-24 15:36:43.087 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting newly assigned partitions: skywalking_delay_message_topic-0
+2023-03-24 15:36:43.099 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting offset for partition skywalking_delay_message_topic-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=DESKTOP-VFAP975:9092 (id: 0 rack: null), epoch=0}}
+2023-03-24 15:36:43.111 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions assigned: [skywalking_delay_message_topic-0]
+2023-03-24 15:37:07.739 [cache-service,,] [http-nio-8083-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/cache-service] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-24 15:37:07.739 [cache-service,,] [http-nio-8083-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-24 15:37:07.758 [cache-service,,] [http-nio-8083-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+2023-03-24 15:37:08.348 [cache-service,,] [http-nio-8083-exec-2] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:6, items:[BulkResponseItem: {"create":{"_id":"yhCMEocBTRK2X9qjxfZo","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":4,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 15:37:08.390 [cache-service,,] [http-nio-8083-exec-2] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:5, items:[BulkResponseItem: {"create":{"_id":"yxCMEocBTRK2X9qjxvYf","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":5,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 15:37:08.539 [cache-service,,] [http-nio-8083-exec-2] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-03-24 15:37:08.559 [cache-service,,] [http-nio-8083-exec-2] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:37:08.559 [cache-service,,] [http-nio-8083-exec-2] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:37:08.559 [cache-service,,] [http-nio-8083-exec-2] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679643428559
+2023-03-24 15:37:08.567 [cache-service,,] [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 15:37:17.803 [cache-service,,] [kafka-coordinator-heartbeat-thread | mentugroup] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2023-03-24 15:37:17.809 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:37:17.809 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2023-03-24 15:37:17.925 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:37:32.566 [cache-service,,] [kafka-coordinator-heartbeat-thread | mentugroup] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2023-03-24 15:37:32.567 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:37:32.567 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2023-03-24 15:37:32.683 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:38:51.318 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.FetchSessionHandler - [Consumer clientId=consumer-1, groupId=mentugroup] Error sending fetch request (sessionId=921544805, epoch=205) to node 0: org.apache.kafka.common.errors.DisconnectException.
+2023-03-24 15:38:51.319 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2023-03-24 15:39:03.140 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:39:32.738 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Member consumer-1-d9097aa1-09a2-4d9c-9f7c-0a4ed1d42428 sending LeaveGroup request to coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:39:32.739 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=mentugroup] Unsubscribed all topics or patterns and assigned partitions
+2023-03-24 15:39:32.739 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2023-03-24 15:39:32.761 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - mentugroup: Consumer stopped
+2023-03-24 15:39:32.791 [cache-service,,] [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-03-24 15:39:42.685 [cache-service,,] [main] INFO  com.htsc.CacheApplication - Starting CacheApplication on DESKTOP-VFAP975 with PID 8484 (D:\software\github\springcloud\cache-service\target\classes started by 57620 in D:\software\github\springcloud)
+2023-03-24 15:39:42.687 [cache-service,,] [main] INFO  com.htsc.CacheApplication - The following profiles are active: dev
+2023-03-24 15:39:44.018 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:39:44.018 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-03-24 15:39:44.058 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29ms. Found 0 Elasticsearch repository interfaces.
+2023-03-24 15:39:44.074 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:39:44.075 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-03-24 15:39:44.076 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-03-24 15:39:44.109 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:39:44.115 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-24 15:39:44.133 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2023-03-24 15:39:45.145 [cache-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2023-03-24 15:39:45.161 [cache-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2023-03-24 15:39:45.161 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-24 15:39:45.161 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2023-03-24 15:39:45.311 [cache-service,,] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/cache-service] - Initializing Spring embedded WebApplicationContext
+2023-03-24 15:39:45.311 [cache-service,,] [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2536 ms
+2023-03-24 15:39:46.819 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-24 15:39:48.265 [cache-service,,] [main] INFO  org.apache.kafka.clients.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [127.0.0.1:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-03-24 15:39:48.387 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:39:48.387 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:39:48.387 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679643588385
+2023-03-24 15:39:48.693 [cache-service,,] [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = mentugroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-03-24 15:39:48.734 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:39:48.734 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:39:48.734 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679643588734
+2023-03-24 15:39:48.736 [cache-service,,] [main] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=mentugroup] Subscribed to topic(s): skywalking_delay_message_topic
+2023-03-24 15:39:48.738 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2023-03-24 15:39:48.756 [cache-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2023-03-24 15:39:48.770 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-1, groupId=mentugroup] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 15:39:48.771 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:39:48.777 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Revoking previously assigned partitions []
+2023-03-24 15:39:48.778 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions revoked: []
+2023-03-24 15:39:48.778 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:39:48.798 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:39:48.799 [cache-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path '/cache-service'
+2023-03-24 15:39:48.803 [cache-service,,] [main] INFO  com.htsc.CacheApplication - Started CacheApplication in 7.119 seconds (JVM running for 13.719)
+2023-03-24 15:39:48.823 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Successfully joined group with generation 9
+2023-03-24 15:39:48.831 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting newly assigned partitions: skywalking_delay_message_topic-0
+2023-03-24 15:39:48.849 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting offset for partition skywalking_delay_message_topic-0 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=DESKTOP-VFAP975:9092 (id: 0 rack: null), epoch=0}}
+2023-03-24 15:39:48.869 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions assigned: [skywalking_delay_message_topic-0]
+2023-03-24 15:40:18.083 [cache-service,,] [http-nio-8083-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/cache-service] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-24 15:40:18.083 [cache-service,,] [http-nio-8083-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-24 15:40:18.109 [cache-service,,] [http-nio-8083-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 26 ms
+2023-03-24 15:40:18.884 [cache-service,,] [http-nio-8083-exec-1] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:4, items:[BulkResponseItem: {"create":{"_id":"zBCPEocBTRK2X9qjrfZj","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":6,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 15:40:18.911 [cache-service,,] [http-nio-8083-exec-1] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:5, items:[BulkResponseItem: {"create":{"_id":"zRCPEocBTRK2X9qjrvZY","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":7,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 15:40:19.082 [cache-service,,] [http-nio-8083-exec-1] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-03-24 15:40:19.109 [cache-service,,] [http-nio-8083-exec-1] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:40:19.109 [cache-service,,] [http-nio-8083-exec-1] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:40:19.109 [cache-service,,] [http-nio-8083-exec-1] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679643619109
+2023-03-24 15:40:19.118 [cache-service,,] [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 15:40:37.550 [cache-service,,] [http-nio-8083-exec-4] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:4, items:[BulkResponseItem: {"create":{"_id":"zhCPEocBTRK2X9qj9_Yp","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":8,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 15:40:37.562 [cache-service,,] [http-nio-8083-exec-4] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:5, items:[BulkResponseItem: {"create":{"_id":"zxCPEocBTRK2X9qj9_Yz","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":9,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 15:40:37.563 [cache-service,,] [http-nio-8083-exec-4] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-03-24 15:40:37.565 [cache-service,,] [http-nio-8083-exec-4] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:40:37.565 [cache-service,,] [http-nio-8083-exec-4] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:40:37.565 [cache-service,,] [http-nio-8083-exec-4] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679643637565
+2023-03-24 15:40:43.313 [cache-service,,] [kafka-producer-network-thread | producer-2] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-2] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 15:43:11.895 [cache-service,,] [kafka-coordinator-heartbeat-thread | mentugroup] INFO  org.apache.kafka.clients.FetchSessionHandler - [Consumer clientId=consumer-1, groupId=mentugroup] Error sending fetch request (sessionId=1329683443, epoch=86) to node 0: org.apache.kafka.common.errors.DisconnectException.
+2023-03-24 15:43:11.896 [cache-service,,] [kafka-coordinator-heartbeat-thread | mentugroup] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2023-03-24 15:43:11.946 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=mentugroup] Unsubscribed all topics or patterns and assigned partitions
+2023-03-24 15:43:11.946 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2023-03-24 15:43:11.949 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - mentugroup: Consumer stopped
+2023-03-24 15:43:11.979 [cache-service,,] [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-03-24 15:43:21.432 [cache-service,,] [main] INFO  com.htsc.CacheApplication - Starting CacheApplication on DESKTOP-VFAP975 with PID 13996 (D:\software\github\springcloud\cache-service\target\classes started by 57620 in D:\software\github\springcloud)
+2023-03-24 15:43:21.435 [cache-service,,] [main] INFO  com.htsc.CacheApplication - The following profiles are active: dev
+2023-03-24 15:43:22.819 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:43:22.824 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-03-24 15:43:22.852 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21ms. Found 0 Elasticsearch repository interfaces.
+2023-03-24 15:43:22.860 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:43:22.861 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-03-24 15:43:22.864 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-03-24 15:43:22.890 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:43:22.892 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-24 15:43:22.912 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+2023-03-24 15:43:23.919 [cache-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2023-03-24 15:43:23.934 [cache-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2023-03-24 15:43:23.935 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-24 15:43:23.935 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2023-03-24 15:43:24.059 [cache-service,,] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/cache-service] - Initializing Spring embedded WebApplicationContext
+2023-03-24 15:43:24.060 [cache-service,,] [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2521 ms
+2023-03-24 15:43:25.535 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-24 15:43:26.998 [cache-service,,] [main] INFO  org.apache.kafka.clients.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [127.0.0.1:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-03-24 15:43:27.116 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:43:27.116 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:43:27.117 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679643807115
+2023-03-24 15:43:27.493 [cache-service,,] [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = mentugroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-03-24 15:43:27.536 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:43:27.536 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:43:27.537 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679643807536
+2023-03-24 15:43:27.539 [cache-service,,] [main] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=mentugroup] Subscribed to topic(s): skywalking_delay_message_topic
+2023-03-24 15:43:27.541 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2023-03-24 15:43:27.559 [cache-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2023-03-24 15:43:27.574 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-1, groupId=mentugroup] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 15:43:27.575 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:43:27.581 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Revoking previously assigned partitions []
+2023-03-24 15:43:27.581 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions revoked: []
+2023-03-24 15:43:27.582 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:43:27.618 [cache-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path '/cache-service'
+2023-03-24 15:43:27.623 [cache-service,,] [main] INFO  com.htsc.CacheApplication - Started CacheApplication in 7.254 seconds (JVM running for 13.699)
+2023-03-24 15:43:27.627 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:43:27.711 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Successfully joined group with generation 11
+2023-03-24 15:43:27.722 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting newly assigned partitions: skywalking_delay_message_topic-0
+2023-03-24 15:43:27.740 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting offset for partition skywalking_delay_message_topic-0 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=DESKTOP-VFAP975:9092 (id: 0 rack: null), epoch=0}}
+2023-03-24 15:43:27.757 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions assigned: [skywalking_delay_message_topic-0]
+2023-03-24 15:43:41.796 [cache-service,,] [http-nio-8083-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/cache-service] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-24 15:43:41.796 [cache-service,,] [http-nio-8083-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-24 15:43:41.812 [cache-service,,] [http-nio-8083-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2023-03-24 15:43:42.189 [cache-service,,] [http-nio-8083-exec-3] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:4, items:[BulkResponseItem: {"create":{"_id":"0BCSEocBTRK2X9qjx_b-","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":10,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 15:43:42.218 [cache-service,,] [http-nio-8083-exec-3] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:4, items:[BulkResponseItem: {"create":{"_id":"0RCSEocBTRK2X9qjyPaE","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":11,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 15:43:42.420 [cache-service,,] [http-nio-8083-exec-3] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-03-24 15:43:42.438 [cache-service,,] [http-nio-8083-exec-3] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:43:42.439 [cache-service,,] [http-nio-8083-exec-3] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:43:42.439 [cache-service,,] [http-nio-8083-exec-3] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679643822438
+2023-03-24 15:43:44.023 [cache-service,,] [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 15:54:40.918 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Member consumer-1-fd0c13b8-71bd-4f95-8e1d-476b76079ef5 sending LeaveGroup request to coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:54:40.918 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=mentugroup] Unsubscribed all topics or patterns and assigned partitions
+2023-03-24 15:54:40.918 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2023-03-24 15:54:40.934 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - mentugroup: Consumer stopped
+2023-03-24 15:54:40.964 [cache-service,,] [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-03-24 15:54:52.006 [cache-service,,] [main] INFO  com.htsc.CacheApplication - Starting CacheApplication on DESKTOP-VFAP975 with PID 25372 (D:\software\github\springcloud\cache-service\target\classes started by 57620 in D:\software\github\springcloud)
+2023-03-24 15:54:52.010 [cache-service,,] [main] INFO  com.htsc.CacheApplication - The following profiles are active: dev
+2023-03-24 15:54:53.860 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:54:53.872 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-03-24 15:54:53.927 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40ms. Found 0 Elasticsearch repository interfaces.
+2023-03-24 15:54:53.938 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:54:53.939 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-03-24 15:54:53.942 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-03-24 15:54:53.986 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:54:53.993 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-24 15:54:54.032 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2023-03-24 15:54:55.840 [cache-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2023-03-24 15:54:55.858 [cache-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2023-03-24 15:54:55.860 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-24 15:54:55.860 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2023-03-24 15:54:56.094 [cache-service,,] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/cache-service] - Initializing Spring embedded WebApplicationContext
+2023-03-24 15:54:56.094 [cache-service,,] [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3996 ms
+2023-03-24 15:54:58.598 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-24 15:55:01.153 [cache-service,,] [main] INFO  org.apache.kafka.clients.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [127.0.0.1:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-03-24 15:55:01.402 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:55:01.402 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:55:01.402 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679644501397
+2023-03-24 15:55:02.118 [cache-service,,] [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = mentugroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-03-24 15:55:02.217 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:55:02.217 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:55:02.218 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679644502217
+2023-03-24 15:55:02.222 [cache-service,,] [main] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=mentugroup] Subscribed to topic(s): kafka_delay_topic
+2023-03-24 15:55:02.226 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2023-03-24 15:55:02.257 [cache-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2023-03-24 15:55:02.277 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-1, groupId=mentugroup] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 15:55:02.279 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:55:02.284 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Revoking previously assigned partitions []
+2023-03-24 15:55:02.285 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions revoked: []
+2023-03-24 15:55:02.285 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:55:02.302 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:55:02.313 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Successfully joined group with generation 13
+2023-03-24 15:55:02.316 [cache-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path '/cache-service'
+2023-03-24 15:55:02.321 [cache-service,,] [main] INFO  com.htsc.CacheApplication - Started CacheApplication in 11.264 seconds (JVM running for 17.729)
+2023-03-24 15:55:02.323 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting newly assigned partitions: kafka_delay_topic-0
+2023-03-24 15:55:02.335 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Found no committed offset for partition kafka_delay_topic-0
+2023-03-24 15:55:02.354 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.internals.SubscriptionState - [Consumer clientId=consumer-1, groupId=mentugroup] Resetting offset for partition kafka_delay_topic-0 to offset 0.
+2023-03-24 15:55:02.355 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions assigned: [kafka_delay_topic-0]
+2023-03-24 15:55:45.995 [cache-service,,] [http-nio-8083-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/cache-service] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-24 15:55:45.996 [cache-service,,] [http-nio-8083-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-24 15:55:46.022 [cache-service,,] [http-nio-8083-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 26 ms
+2023-03-24 15:55:46.667 [cache-service,,] [http-nio-8083-exec-2] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:9, items:[BulkResponseItem: {"create":{"_id":"0hCdEocBTRK2X9qj1fbB","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":12,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 15:55:46.706 [cache-service,,] [http-nio-8083-exec-2] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:4, items:[BulkResponseItem: {"create":{"_id":"0xCdEocBTRK2X9qj1vaL","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":13,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 15:55:46.979 [cache-service,,] [http-nio-8083-exec-2] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-03-24 15:55:47.014 [cache-service,,] [http-nio-8083-exec-2] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:55:47.014 [cache-service,,] [http-nio-8083-exec-2] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:55:47.014 [cache-service,,] [http-nio-8083-exec-2] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679644547014
+2023-03-24 15:55:49.563 [cache-service,,] [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 15:56:04.635 [cache-service,,] [kafka-coordinator-heartbeat-thread | mentugroup] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2023-03-24 15:56:05.146 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:56:05.151 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Attempt to heartbeat failed for since member id consumer-1-a76981e8-d46e-4b88-8fd6-20108e1080c8 is not valid.
+2023-03-24 15:56:05.152 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Failing OffsetCommit request since the consumer is not part of an active group
+2023-03-24 15:56:05.154 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Revoking previously assigned partitions [kafka_delay_topic-0]
+2023-03-24 15:56:05.154 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions revoked: [kafka_delay_topic-0]
+2023-03-24 15:56:05.154 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:56:05.156 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:56:05.163 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Successfully joined group with generation 15
+2023-03-24 15:56:05.163 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting newly assigned partitions: kafka_delay_topic-0
+2023-03-24 15:56:05.164 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting offset for partition kafka_delay_topic-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=DESKTOP-VFAP975:9092 (id: 0 rack: null), epoch=0}}
+2023-03-24 15:56:05.165 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions assigned: [kafka_delay_topic-0]
+2023-03-24 15:56:31.153 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Member consumer-1-12fc3c2d-bc85-484c-b526-26a53b38a909 sending LeaveGroup request to coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:56:31.153 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=mentugroup] Unsubscribed all topics or patterns and assigned partitions
+2023-03-24 15:56:31.153 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2023-03-24 15:56:31.159 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - mentugroup: Consumer stopped
+2023-03-24 15:56:31.190 [cache-service,,] [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-03-24 15:56:42.278 [cache-service,,] [main] INFO  com.htsc.CacheApplication - Starting CacheApplication on DESKTOP-VFAP975 with PID 7960 (D:\software\github\springcloud\cache-service\target\classes started by 57620 in D:\software\github\springcloud)
+2023-03-24 15:56:42.282 [cache-service,,] [main] INFO  com.htsc.CacheApplication - The following profiles are active: dev
+2023-03-24 15:56:43.765 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:56:43.777 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-03-24 15:56:43.826 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34ms. Found 0 Elasticsearch repository interfaces.
+2023-03-24 15:56:43.838 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:56:43.839 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-03-24 15:56:43.843 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-03-24 15:56:43.878 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 15:56:43.883 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-24 15:56:43.917 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2023-03-24 15:56:45.306 [cache-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2023-03-24 15:56:45.323 [cache-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2023-03-24 15:56:45.324 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-24 15:56:45.324 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2023-03-24 15:56:45.471 [cache-service,,] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/cache-service] - Initializing Spring embedded WebApplicationContext
+2023-03-24 15:56:45.471 [cache-service,,] [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3102 ms
+2023-03-24 15:56:47.431 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-24 15:56:49.128 [cache-service,,] [main] INFO  org.apache.kafka.clients.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [127.0.0.1:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-03-24 15:56:49.275 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:56:49.275 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:56:49.276 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679644609274
+2023-03-24 15:56:49.675 [cache-service,,] [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = mentugroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-03-24 15:56:49.723 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:56:49.723 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:56:49.723 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679644609723
+2023-03-24 15:56:49.725 [cache-service,,] [main] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=mentugroup] Subscribed to topic(s): kafka_delay_topic
+2023-03-24 15:56:49.728 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2023-03-24 15:56:49.756 [cache-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2023-03-24 15:56:49.770 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-1, groupId=mentugroup] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 15:56:49.771 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 15:56:49.778 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Revoking previously assigned partitions []
+2023-03-24 15:56:49.778 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions revoked: []
+2023-03-24 15:56:49.779 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:56:49.794 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 15:56:49.805 [cache-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path '/cache-service'
+2023-03-24 15:56:49.806 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Successfully joined group with generation 17
+2023-03-24 15:56:49.810 [cache-service,,] [main] INFO  com.htsc.CacheApplication - Started CacheApplication in 8.595 seconds (JVM running for 15.08)
+2023-03-24 15:56:49.814 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting newly assigned partitions: kafka_delay_topic-0
+2023-03-24 15:56:49.825 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting offset for partition kafka_delay_topic-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=DESKTOP-VFAP975:9092 (id: 0 rack: null), epoch=0}}
+2023-03-24 15:56:49.842 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions assigned: [kafka_delay_topic-0]
+2023-03-24 15:59:35.517 [cache-service,,] [http-nio-8083-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/cache-service] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-24 15:59:35.518 [cache-service,,] [http-nio-8083-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-24 15:59:35.532 [cache-service,,] [http-nio-8083-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2023-03-24 15:59:35.977 [cache-service,,] [http-nio-8083-exec-2] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:6, items:[BulkResponseItem: {"create":{"_id":"1BChEocBTRK2X9qjVfaw","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":14,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 15:59:36.003 [cache-service,,] [http-nio-8083-exec-2] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:6, items:[BulkResponseItem: {"create":{"_id":"1RChEocBTRK2X9qjVvY7","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":15,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 15:59:36.174 [cache-service,,] [http-nio-8083-exec-2] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-03-24 15:59:36.197 [cache-service,,] [http-nio-8083-exec-2] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 15:59:36.197 [cache-service,,] [http-nio-8083-exec-2] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 15:59:36.197 [cache-service,,] [http-nio-8083-exec-2] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679644776197
+2023-03-24 15:59:36.205 [cache-service,,] [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 16:02:40.837 [cache-service,,] [http-nio-8083-exec-7] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:4, items:[BulkResponseItem: {"create":{"_id":"1hCkEocBTRK2X9qjKPZA","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":16,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 16:02:40.844 [cache-service,,] [http-nio-8083-exec-7] INFO  com.htsc.filter.SkywalkingHttpFilter - BulkResponse errors:false, took:3, items:[BulkResponseItem: {"create":{"_id":"1xCkEocBTRK2X9qjKPZH","_index":"sw_segment_page_trace_relation-230324","status":201,"_primary_term":1,"result":"created","_seq_no":17,"_shards":{"failed":0.0,"successful":1.0,"total":2.0},"_version":1}}].
+2023-03-24 16:02:40.845 [cache-service,,] [http-nio-8083-exec-7] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-03-24 16:02:40.848 [cache-service,,] [http-nio-8083-exec-7] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 16:02:40.848 [cache-service,,] [http-nio-8083-exec-7] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 16:02:40.849 [cache-service,,] [http-nio-8083-exec-7] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679644960848
+2023-03-24 16:02:40.852 [cache-service,,] [kafka-producer-network-thread | producer-2] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-2] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 16:04:56.886 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.FetchSessionHandler - [Consumer clientId=consumer-1, groupId=mentugroup] Error sending fetch request (sessionId=1494202024, epoch=932) to node 0: org.apache.kafka.common.errors.DisconnectException.
+2023-03-24 16:04:56.886 [cache-service,,] [kafka-coordinator-heartbeat-thread | mentugroup] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2023-03-24 16:18:07.610 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=mentugroup] Unsubscribed all topics or patterns and assigned partitions
+2023-03-24 16:18:07.610 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2023-03-24 16:18:07.612 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - mentugroup: Consumer stopped
+2023-03-24 16:18:07.637 [cache-service,,] [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-03-24 17:21:11.194 [applicationName_IS_UNDEFINED,,] [main] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-03-24 17:21:11.574 [applicationName_IS_UNDEFINED,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 17:21:11.580 [applicationName_IS_UNDEFINED,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 17:21:11.581 [applicationName_IS_UNDEFINED,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679649671560
+2023-03-24 17:21:14.763 [applicationName_IS_UNDEFINED,,] [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 17:21:17.594 [applicationName_IS_UNDEFINED,,] [main] INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2023-03-24 17:25:15.626 [applicationName_IS_UNDEFINED,,] [main] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-03-24 17:25:15.780 [applicationName_IS_UNDEFINED,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 17:25:15.780 [applicationName_IS_UNDEFINED,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 17:25:15.780 [applicationName_IS_UNDEFINED,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679649915780
+2023-03-24 17:25:15.968 [applicationName_IS_UNDEFINED,,] [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 17:25:15.984 [applicationName_IS_UNDEFINED,,] [main] INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2023-03-24 17:25:44.736 [cache-service,,] [main] INFO  com.htsc.CacheApplication - Starting CacheApplication on DESKTOP-VFAP975 with PID 19284 (D:\software\github\springcloud\cache-service\target\classes started by 57620 in D:\software\github\springcloud)
+2023-03-24 17:25:44.741 [cache-service,,] [main] INFO  com.htsc.CacheApplication - The following profiles are active: dev
+2023-03-24 17:25:46.065 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 17:25:46.075 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-03-24 17:25:46.123 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37ms. Found 0 Elasticsearch repository interfaces.
+2023-03-24 17:25:46.133 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 17:25:46.135 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-03-24 17:25:46.139 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-03-24 17:25:46.169 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-24 17:25:46.173 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-24 17:25:46.217 [cache-service,,] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2023-03-24 17:25:47.314 [cache-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2023-03-24 17:25:47.347 [cache-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2023-03-24 17:25:47.348 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-24 17:25:47.349 [cache-service,,] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2023-03-24 17:25:47.496 [cache-service,,] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/cache-service] - Initializing Spring embedded WebApplicationContext
+2023-03-24 17:25:47.496 [cache-service,,] [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2655 ms
+2023-03-24 17:25:49.024 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-24 17:25:50.451 [cache-service,,] [main] INFO  org.apache.kafka.clients.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [127.0.0.1:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-03-24 17:25:50.562 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 17:25:50.562 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 17:25:50.562 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679649950561
+2023-03-24 17:25:50.884 [cache-service,,] [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = mentugroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-03-24 17:25:50.925 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.3.1
+2023-03-24 17:25:50.925 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+2023-03-24 17:25:50.925 [cache-service,,] [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679649950925
+2023-03-24 17:25:50.927 [cache-service,,] [main] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=mentugroup] Subscribed to topic(s): kafka_delay_topic
+2023-03-24 17:25:50.929 [cache-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2023-03-24 17:25:50.946 [cache-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2023-03-24 17:25:50.961 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-1, groupId=mentugroup] Cluster ID: T5CqpVhqTF6m3UX5vArwyQ
+2023-03-24 17:25:50.962 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 17:25:50.967 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Revoking previously assigned partitions []
+2023-03-24 17:25:50.968 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions revoked: []
+2023-03-24 17:25:50.969 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 17:25:51.014 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 17:25:51.023 [cache-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path '/cache-service'
+2023-03-24 17:25:51.027 [cache-service,,] [main] INFO  com.htsc.CacheApplication - Started CacheApplication in 7.323 seconds (JVM running for 13.8)
+2023-03-24 17:25:51.045 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Successfully joined group with generation 19
+2023-03-24 17:25:51.053 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting newly assigned partitions: kafka_delay_topic-0
+2023-03-24 17:25:51.064 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting offset for partition kafka_delay_topic-0 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=DESKTOP-VFAP975:9092 (id: 0 rack: null), epoch=0}}
+2023-03-24 17:25:51.081 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions assigned: [kafka_delay_topic-0]
+2023-03-24 17:26:16.050 [cache-service,,] [kafka-coordinator-heartbeat-thread | mentugroup] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2023-03-24 17:26:16.056 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 17:26:16.056 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2023-03-24 17:26:16.172 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 17:26:16.185 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Attempt to heartbeat failed for since member id consumer-1-8280606b-18f2-4aed-888e-bb9e978efe04 is not valid.
+2023-03-24 17:26:16.185 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Failing OffsetCommit request since the consumer is not part of an active group
+2023-03-24 17:26:16.186 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Revoking previously assigned partitions [kafka_delay_topic-0]
+2023-03-24 17:26:16.186 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions revoked: [kafka_delay_topic-0]
+2023-03-24 17:26:16.186 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 17:26:16.192 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 17:26:16.198 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Successfully joined group with generation 21
+2023-03-24 17:26:16.199 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting newly assigned partitions: kafka_delay_topic-0
+2023-03-24 17:26:16.200 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting offset for partition kafka_delay_topic-0 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=DESKTOP-VFAP975:9092 (id: 0 rack: null), epoch=0}}
+2023-03-24 17:26:16.683 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions assigned: [kafka_delay_topic-0]
+2023-03-24 17:27:01.878 [cache-service,,] [http-nio-8083-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/cache-service] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-24 17:27:01.879 [cache-service,,] [http-nio-8083-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-24 17:27:01.899 [cache-service,,] [http-nio-8083-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+2023-03-24 19:10:38.291 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.FetchSessionHandler - [Consumer clientId=consumer-1, groupId=mentugroup] Error sending fetch request (sessionId=2128139054, epoch=4444) to node 0: org.apache.kafka.common.errors.DisconnectException.
+2023-03-24 19:10:38.299 [cache-service,,] [kafka-coordinator-heartbeat-thread | mentugroup] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2023-03-24 19:10:38.484 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Discovered group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null)
+2023-03-24 19:10:39.540 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Attempt to heartbeat failed for since member id consumer-1-ddd70234-26a2-4a1d-a3f2-515996d0c20d is not valid.
+2023-03-24 19:10:39.548 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Failing OffsetCommit request since the consumer is not part of an active group
+2023-03-24 19:10:39.548 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Revoking previously assigned partitions [kafka_delay_topic-0]
+2023-03-24 19:10:39.548 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions revoked: [kafka_delay_topic-0]
+2023-03-24 19:10:39.548 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 19:10:42.272 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] (Re-)joining group
+2023-03-24 19:10:42.320 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Successfully joined group with generation 23
+2023-03-24 19:10:42.330 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting newly assigned partitions: kafka_delay_topic-0
+2023-03-24 19:10:42.334 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Setting offset for partition kafka_delay_topic-0 to the committed offset FetchPosition{offset=5, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=DESKTOP-VFAP975:9092 (id: 0 rack: null), epoch=0}}
+2023-03-24 19:10:42.342 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - mentugroup: partitions assigned: [kafka_delay_topic-0]
+2023-03-24 19:14:50.131 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=mentugroup] Group coordinator DESKTOP-VFAP975:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2023-03-24 19:14:50.131 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.FetchSessionHandler - [Consumer clientId=consumer-1, groupId=mentugroup] Error sending fetch request (sessionId=1655502460, epoch=485) to node 0: org.apache.kafka.common.errors.DisconnectException.
+2023-03-24 19:14:54.878 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=mentugroup] Unsubscribed all topics or patterns and assigned partitions
+2023-03-24 19:14:54.878 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2023-03-24 19:14:54.878 [cache-service,,] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - mentugroup: Consumer stopped
+2023-03-24 19:14:54.965 [cache-service,,] [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
